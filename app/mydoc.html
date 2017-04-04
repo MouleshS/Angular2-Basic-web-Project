@@ -1,0 +1,18 @@
+<p>
+
+    </p>
+    <h2>Your Title: {{nameValue}}</h2>
+    <ul><li *ngFor="let list of lists">Hello {{ list }}</li></ul> 
+    <form class="ui large form segment"> 
+    <h3>Add a Link</h3> <div> 
+     <label for="title">Title:</label>  
+      <input [(ngModel)]="nameValue" placeholder="title" name="Title" >
+      </div>   
+      <label for="link">Link:</label>  <input name="link"></form>
+      <div class=container *ngFor="let data of dataServer"
+      [class.selected]="data === selectedItem"
+       (click)="onSelect(data)"> 
+         <div id="myimages">
+         <img src="http://test-trykaro-vm.cloudapp.net/Trymeagain/{{data.images.image3}}">
+         </div>
+<div class=caption>       {{data.productName}} </div></div>
